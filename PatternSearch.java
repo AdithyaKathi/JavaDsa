@@ -4,7 +4,7 @@ public class PatternSearch
     public static void naivePatternSearching(String text , String pattern){
         int len_text = text.length();
         int len_pattern = pattern.length();
-        for(int i = 0; i<len_text; i++){
+        for(int i = 0; i<len_text - len_pattern; i++){
             int j;
             for(j = 0; j<len_pattern; j++){
                 if(pattern.charAt(j) != text.charAt(i+j)){
